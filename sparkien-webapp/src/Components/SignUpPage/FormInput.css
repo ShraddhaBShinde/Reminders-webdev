@@ -16,7 +16,7 @@ label {
     color: gray;
 }
 
-span {
+.err-msg {
     font-size: 12px;
     padding: 3px;
     color: red;

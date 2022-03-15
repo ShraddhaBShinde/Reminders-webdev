@@ -1,5 +1,6 @@
 import React from 'react';
 import SignUpPage from '../SignUpPage/SignUpPage';
+import Footer from '../Footer/Footer';
 
 const HomePageSm = () => {
     return(
@@ -43,7 +44,7 @@ const HomePageLg = () => {
                     <h2 className='font-serif text-2xl'>Are you a person who requires someone to remind about your tasks?</h2>
                     <h1 className='font-serif text-2xl mt-5'>Don't worry! <span className='font-serif font-bold text-3xl text-[#2D31FA]'>Daily Reminder</span> is there to remind you everything!</h1>
                     <h1 className='font-serif text-2xl mt-5'>Just <span className='font-serif font-bold text-2xl text-[#2D31FA]'>SignUp</span> to add you tasks and get relieved</h1>
-                    <button onClick={SignUpPage} className="font-semibold text-xl rounded-full bg-[#2D31FA] px-3 py-2 text-white w-[150px] mt-5 hover:shadow-lg delay-200">SignUp</button>
+                    <button onClick={SignUpPage} className="font-semibold text-xl rounded bg-[#2D31FA] px-3 py-2 text-white w-[150px] mt-5 hover:shadow-lg delay-200">SignUp</button>
                 </div>
             </div>
         </div>

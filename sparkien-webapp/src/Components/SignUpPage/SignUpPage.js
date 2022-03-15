@@ -2,7 +2,7 @@ import { useState } from "react";
 import "./SignUpPage.css";
 import FormInput from "../SignUpPage/FormInput.jsx";
 
-const SignUpPage = () => {
+const SignUpPageLg = () => {
   const [values, setValues] = useState({
     username: "",
     email: "",
@@ -45,9 +45,9 @@ const SignUpPage = () => {
       type: "password",
       placeholder: "Password",
       errorMessage:
-        "Password should be 8-20 characters and include at least 1 letter, 1 number and 1 special character!",
+        "Password should be 6-20 characters and include at least 1 letter, 1 number and 1 special character!",
       label: "Password",
-      pattern: `^(?=.*[0-9])(?=.*[a-zA-Z])(?=.*[!@#$%^&*])[a-zA-Z0-9!@#$%^&*]{8,20}$`,
+      pattern: `^(?=.*[0-9])(?=.*[a-zA-Z])(?=.*[!@#$%^&*])[a-zA-Z0-9!@#$%^&*]{6,20}$`,
       required: true,
     },
     {
@@ -71,9 +71,9 @@ const SignUpPage = () => {
   };
 
   return (
-    <div className="sign-up">
+    <div className="sign-up flex justify-center">
       <form onSubmit={handleSubmit}>
-        <h1>Register</h1>
+        <h1 className="h1-register ">Register</h1>
         {inputs.map((input) => (
           <FormInput
             key={input.id}
@@ -82,10 +82,18 @@ const SignUpPage = () => {
             onChange={onChange}
           />
         ))}
-        <button>Submit</button>
+        <button className="submit-btn">Submit</button>
       </form>
     </div>
   );
+};
+
+const SignUpPage = () => {
+  return(
+    <div className="hidden lg:flex">
+      <SignUpPageLg />
+    </div>
+  )
 };
 
 export default SignUpPage;

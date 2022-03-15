@@ -122,10 +122,10 @@ const FooterLg = () => {
 const Footer = () => {
     return(
         <footer>
-            <div className="footer-container lg:hidden">
+            <div className="footer-container">
             <FooterSm />
         </div>
-        <div className="hidden lg-flex">
+        <div className="footer-container hidden lg-flex">
             <FooterLg />
         </div>
         </footer>
