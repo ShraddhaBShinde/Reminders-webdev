@@ -1,21 +1,24 @@
 
 import './App.css';
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom"
 
 //Components
-import Navbar from '../src/Components/Navbar/Navbar';
 import HomePage from '../src/Components/HomePage/HomePage';
-import Footer from './Components/Footer/Footer';
 import SignUpPage from './Components/SignUpPage/SignUpPage';
-import TaskDashboard from './Components/TaskDashboard/TaskDashboard';
+import TaskReminder from './Components/TaskReminder/TaskReminder';
+import Navbar from './Components/Navbar/Navbar';
+
 
 function App() {
   return (
-    <>
-    <Navbar />
-    <HomePage path ="/" exact component={HomePage}/>
-    <SignUpPage path ="/signup/:id" exact component={SignUpPage}/>
-    <TaskDashboard />
-    </>
+    <Router>
+      <Switch>
+        <Route exact path="/" component={HomePage} />
+        <Route exact path="/signup" component={SignUpPage} />
+        <Route exact path="/reminder" component={TaskReminder} />
+        <Route exact path="/menu" component={Navbar} />
+      </Switch>
+    </Router>
   );
 }
 

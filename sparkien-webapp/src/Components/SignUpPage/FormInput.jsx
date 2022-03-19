@@ -10,9 +10,9 @@ const FormInput = (props) => {
   };
 
   return (
-    <div className="formInput">
-      <label>{label}</label>
-      <input
+    <div className="formInput flex flex-col pt-5">
+      <label className="text-xl text-[#D1D1D1]">{label}</label>
+      <input 
         {...inputProps}
         onChange={onChange}
         onBlur={handleFocus}

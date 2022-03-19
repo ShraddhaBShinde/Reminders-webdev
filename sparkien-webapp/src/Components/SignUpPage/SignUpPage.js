@@ -1,8 +1,10 @@
-import { useState } from "react";
+import React, { useState } from "react";
 import "./SignUpPage.css";
 import FormInput from "../SignUpPage/FormInput.jsx";
+import Navbar from "../Navbar/Navbar";
 
-const SignUpPageLg = () => {
+const SignUpPageLgSm = () => {
+
   const [values, setValues] = useState({
     username: "",
     email: "",
@@ -71,9 +73,9 @@ const SignUpPageLg = () => {
   };
 
   return (
-    <div className="sign-up flex justify-center">
+    <div data-aos="fade-in" data-aos-offset="200" data-aos-duration="1000" className="sign-up w-[500px] border mt-10 rounded shadow-lg p-5">
       <form onSubmit={handleSubmit}>
-        <h1 className="h1-register ">Register</h1>
+        <h1 className="h1-register flex font-bold text-2xl justify-center text-[#2D31FA] ">Register to Daily Reminder</h1>
         {inputs.map((input) => (
           <FormInput
             key={input.id}
@@ -82,16 +84,21 @@ const SignUpPageLg = () => {
             onChange={onChange}
           />
         ))}
-        <button className="submit-btn">Submit</button>
+        <div className="pt-5">
+        <button className="submit-btn w-[100%] font-serif text-xl text-white justify-center align-center rounded bg-[#2D31FA] px-2 py-2 hover:shadow-lg delay-200">Submit</button>
+        </div>
       </form>
     </div>
   );
 };
 
 const SignUpPage = () => {
-  return(
-    <div className="hidden lg:flex">
-      <SignUpPageLg />
+  return (
+    <div>
+      <Navbar />
+      <div className=" lg:flex justify-center">
+        <SignUpPageLgSm />
+      </div>
     </div>
   )
 };

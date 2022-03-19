@@ -62,13 +62,13 @@ const FooterSm = () => {
 }
 const FooterLg = () => {
     return(
-        <div>
-            <div className="footer-content font-serif flex flex-row justify-around gap-10 pt-12 m-auto bg-[#2D31FA] h-[200px]">
+        <div className="footer-container">
+            <div className="footer-content font-serif flex flex-row justify-around gap-10 pt-12 m-auto">
                 <div className="flex flex-col">
-                    <img className="h-20 w-20 ml-9" src="https://cdn-icons.flaticon.com/png/128/1886/premium/1886830.png?token=exp=1647098723~hmac=d58f7943f5a4c546f52c7579df44e912" />
-                    <h1 className="text-xl text-center font-bold text-white">Daily Reminder</h1>
+                    <img className="h-20 w-20 ml-9" src="https://ucarecdn.com/0d8c20e7-1552-4740-a1e0-8d0f96181239/" />
+                    <h1 className="text-xl text-center">2022 Travelogged</h1>
                 </div>
-                <div className="flex flex-col text-white">
+                <div className="flex flex-col">
                     <h1 className="text-2xl font-semibold text-center">Company</h1>
                     <ul class="mt-3 gap-2">
                         <li>
@@ -82,7 +82,7 @@ const FooterLg = () => {
                         </li>
                     </ul>
                 </div>
-                <div className="flex flex-col text-white">
+                <div className="flex flex-col">
                     <h1 className="text-2xl font-semibold text-center">Support</h1>
                     <ul class="mt-3 gap-2">
                         <li>
@@ -93,8 +93,8 @@ const FooterLg = () => {
                         </li>
                     </ul>
                 </div>
-                <div className="icons flex flex-col text-white">
-                    <h1 className="text-2xl font-semibold text-center ">Follow Us</h1>
+                <div className="icons flex flex-col">
+                    <h1 className="text-2xl font-semibold text-center">Follow Us</h1>
                     <div className="flex flex-row justify-around">
                         <ul class="mt-3 gap-2">
                             <li>
