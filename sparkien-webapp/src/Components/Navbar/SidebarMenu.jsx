@@ -13,11 +13,6 @@ const SidebarMenu = [
         cName: 'font-serif text-white '
     },
     {
-        title: 'Dasboard',
-        path: '/dashboard',
-        cName: 'font-serif text-white'
-    },
-    {
         title: 'Reminders',
         path: '/reminder',
         cName: 'font-serif text-white'

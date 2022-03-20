@@ -1,11 +1,10 @@
 import React from "react";
 
-
-const FooterSm = () => {
+const FooterLg = () => {
     return (
-        <div>
-            <div className="flex flex-col justify-center bg-[#2D31FA] border rounded-lg pt-5 text-white h-full">
-                <div className="flex flex-row justify-center gap-2">
+        <div className="footer-container mt-14">
+            <div className="flex flex-row justify-around bg-white border rounded-lg shadow-lg pt-5 h-full pb-10">
+                <div className="flex flex-row justify-center gap-2 mt-12">
                     <img className="h-9 w-9" src="https://cdn-icons.flaticon.com/png/128/1886/premium/1886830.png?token=exp=1647098723~hmac=d58f7943f5a4c546f52c7579df44e912" />
                     <h1 className="font-serif text-3xl font-bold pt-2">Daily Reminder</h1>
                 </div>
@@ -20,7 +19,7 @@ const FooterSm = () => {
                         </li>
                     </ul>
                 </div>
-                <div className="flex flex col justify-center mt-8 pb-5">
+                <div className="flex flex col justify-center mt-8">
                     <div className="flex flex-col">
                         <h1 className="text-2xl font-bold text-center">Support</h1>
                         <ul class="mt-3 gap-2">
@@ -33,15 +32,6 @@ const FooterSm = () => {
             </div>
         </div>
     )
-}
-const Footer = () => {
-    return (
-        <div className="footer-container">
-            <div className=" lg:hidden">
-                <FooterSm />
-            </div>
-        </div>
-    )
-}
+};
 
-export default Footer;
+export default FooterLg;

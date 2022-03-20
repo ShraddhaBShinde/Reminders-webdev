@@ -3,6 +3,7 @@ import { BsFillPlusCircleFill } from "react-icons/bs";
 import { RiDeleteBin5Fill } from "react-icons/ri";
 import Navbar from '../Navbar/Navbar';
 
+
 const TaskReminderLgSm = () => {
     const [inputData, setInputData] = useState('');
     const [reminders, setReminders] = useState([]);
@@ -25,7 +26,7 @@ const TaskReminderLgSm = () => {
 
     return (
         <div data-aos="fade-in" data-aos-offset="200" data-aos-duration="1000" className='reminder-container w-full mt-10 p-2 '>
-            <div className=' flex justify-center'>
+            <div className=' flex justify-center '>
                 <div className='flex flex-col font-serif'>
                     <h1 className='flex justify-center font-bold text-2xl justify-center text-[#2D31FA]'>Daily Reminder</h1>
                     <div className='add-reminders flex flex-row gap-2'>
@@ -61,7 +62,7 @@ const TaskReminder = () => {
     return (
         <>
             <div>
-                <Navbar />
+                <Navbar />                   
                 <div className='lg:flex justify-center'>
                     <TaskReminderLgSm />
                 </div>

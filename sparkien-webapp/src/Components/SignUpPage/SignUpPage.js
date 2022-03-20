@@ -8,7 +8,6 @@ const SignUpPageLgSm = () => {
   const [values, setValues] = useState({
     username: "",
     email: "",
-    birthday: "",
     password: "",
     confirmPassword: "",
   });
@@ -36,13 +35,6 @@ const SignUpPageLgSm = () => {
     },
     {
       id: 3,
-      name: "birthday",
-      type: "date",
-      placeholder: "Birthday",
-      label: "Birthday",
-    },
-    {
-      id: 4,
       name: "password",
       type: "password",
       placeholder: "Password",
@@ -53,7 +45,7 @@ const SignUpPageLgSm = () => {
       required: true,
     },
     {
-      id: 5,
+      id: 4,
       name: "confirmPassword",
       type: "password",
       placeholder: "Confirm Password",
@@ -73,9 +65,9 @@ const SignUpPageLgSm = () => {
   };
 
   return (
-    <div data-aos="fade-in" data-aos-offset="200" data-aos-duration="1000" className="sign-up w-[500px] border mt-10 rounded shadow-lg p-5">
+    <div data-aos="fade-in" data-aos-offset="200" data-aos-duration="1000" className="sign-up border mt-10 rounded shadow-lg p-5">
       <form onSubmit={handleSubmit}>
-        <h1 className="h1-register flex font-bold text-2xl justify-center text-[#2D31FA] ">Register to Daily Reminder</h1>
+        <h1 className="h1-register flex font-bold text-2xl justify-center align-center text-[#2D31FA] ">Register to Daily Reminder</h1>
         {inputs.map((input) => (
           <FormInput
             key={input.id}

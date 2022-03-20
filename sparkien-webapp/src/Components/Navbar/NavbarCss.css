@@ -7,7 +7,7 @@
 .nav-menu {
     background-color: #292ce1;
     width: 250px;
-    height: 100vh;
+    height: 35vh;
     display: flex;
     justify-content: center;
     position: fixed;

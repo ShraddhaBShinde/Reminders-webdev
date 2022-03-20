@@ -1,6 +1,7 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { useHistory } from 'react-router-dom';
 import Footer from '../Footer/Footer';
+import FooterLg from '../Footer/FooterLg';
 import Navbar from '../Navbar/Navbar';
 import Carousel from './Carousel';
 
@@ -9,9 +10,9 @@ const HomePageSm = () => {
 
     return (
         <>
-            <div className="flex flex-col gap-5 pt-5 md:w-[750px] md:flex md:justify-center">
-                <div className='flex mt-3'>
-                    <div className='flex flex-col justify-center align-center gap-2 border rounded-md shadow-lg md:flex md:justify-center'>
+            <div className="flex flex-col gap-5 pt-5 md:w-[750px] md:flex md:justify-center ">
+                <div className='flex mt-3 '>
+                    <div data-aos="fade-up" data-aos-offset="200" data-aos-duration="1000" className='flex flex-col justify-center align-center gap-2 border rounded-md shadow-lg md:flex md:justify-center'>
                         <div className="flex justify-center">
                             <img className="w-[650px] h-[150] rounded-md mt-2" src='https://images.unsplash.com/photo-1628692945421-21162c93a8a6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8cmVtaW5kZXJ8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60' />
                         </div>
@@ -31,8 +32,8 @@ const HomePageSm = () => {
                         </div>
                     </div>
                 </div>
-                <div className="container mx-auto mt-15 px-15 pb-10">
-                    <h1 className="text-2xl pl-12 font-bold">Events Happening Near You</h1>
+                <div data-aos="fade-in" data-aos-offset="200" data-aos-duration="1000" className="container mx-auto mt-15 px-15 pb-10">
+                    <h1 className="flex justify-center text-2xl pl-12 mt-10 mb-5 font-bold">Daily Reminder!!</h1>
                     <Carousel />
                 </div>
             </div>
@@ -41,7 +42,7 @@ const HomePageSm = () => {
 };
 
 const HomePageLg = () => {
-    
+
 
     let history = useHistory();
 
@@ -65,15 +66,14 @@ const HomePageLg = () => {
                     </div>
                 </div>
                 <div className='bg-white'>
-                <div className="container mx-auto mt-15 px-15 pb-10">
-                    <h1 className="text-2xl pl-12 font-bold">Events Happening Near You</h1>
-                    <Carousel />
+                    <div data-aos="fade-in" data-aos-offset="200" data-aos-duration="1000" className="container mx-auto mt-12 px-15 pb-10">
+                        <h1 className="flex justify-center text-2xl pl-12 mb-5 font-bold">Daily Reminder!!</h1>
+                        <Carousel />
+                    </div>
                 </div>
+                <div>
+                    <FooterLg />
                 </div>
-                <div className='bg-white'>
-                    hello
-                </div>
-
             </div>
         </>
     )
@@ -89,8 +89,7 @@ const HomePage = () => {
             <div className='hidden lg:flex'>
                 <HomePageLg />
             </div>
-            
-
+            <Footer />
         </div>
 
     );

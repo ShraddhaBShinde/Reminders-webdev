@@ -14,8 +14,11 @@ const NavbarSm = () => {
     return (
 
         <>
-            <div className='w-full flex justify-between font-serif p-3 bg-[#2D31FA] text-white'>
-                <h1 className='text-xl font-bold text-white'>Daily Reminder</h1>
+            <div className='flex w-full justify-between font-serif p-3 bg-[#2D31FA] text-white'>
+                <div className="flex gap-2">
+                <img className="h-7 w-7 mt-2 " src="https://cdn-icons.flaticon.com/png/128/1886/premium/1886830.png?token=exp=1647098723~hmac=d58f7943f5a4c546f52c7579df44e912" />
+                <h1 className='text-xl font-bold text-white pt-2'>Daily Reminder</h1>
+                </div>
                 <button href="#" className='menu-bars hover:shadow-lg rounded-md'><BiIcons.BiMenu onClick={showSidebar} className='h-10 w-10' />
                 </button>
             </div>
@@ -56,7 +59,6 @@ const NavbarLg = () => {
                     <ul className='flex flex-end gap-7 p-2 mr-4'>
                         <li className="hover:shadow-lg delay-200 rounded-md px-2 text-xl"><a href="" onClick={() => { history.push("/") }}>Home</a></li>
                         <li className="hover:shadow-lg delay-200 rounded-md px-2 text-xl"><a href="" onClick={() => { history.push("/signup") }}>SignUp</a></li>
-                        <li className="hover:shadow-lg delay-200 rounded-md px-2 text-xl"> <a href='' onClick={() => { history.push("/dashboard") }}> Dashboard </a> </li>
                         <li className="hover:shadow-lg delay-200 rounded-md px-2 text-xl"> <a href='' onClick={() => { history.push("/reminder") }}> Reminders</a> </li>
                     </ul>
                 </div>
