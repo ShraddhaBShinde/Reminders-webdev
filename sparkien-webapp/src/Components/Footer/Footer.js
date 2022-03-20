@@ -36,11 +36,11 @@ const FooterSm = () => {
 }
 const Footer = () => {
     return (
-        <div className="footer-container">
+        <footer className="footer-container">
             <div className=" lg:hidden">
                 <FooterSm />
             </div>
-        </div>
+        </footer>
     )
 }
 
